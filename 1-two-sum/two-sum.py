@@ -1,12 +1,24 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        prevMap={} # value index
-        for i , n in enumerate(nums):
-            diff=target - n
-            if diff in prevMap:
-                return [prevMap[diff],i]
-            prevMap[n]=i
-        return
+        seen={}
+        for i in range(len(nums)):
+            need=target-nums[i]
+            if need in seen:
+                return[seen[need],i]
 
+            seen[nums[i]] =i
+
+
+        
        
+        
+
+
+
+
+        
+
+
+        
+      
         
