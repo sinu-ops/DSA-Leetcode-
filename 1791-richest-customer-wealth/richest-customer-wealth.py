@@ -6,7 +6,7 @@ class Solution(object):
 
             for money in customer:
                 wealth += money
-                res=max(res,wealth)
+            res=max(res,wealth)
                 
                 
         return res
