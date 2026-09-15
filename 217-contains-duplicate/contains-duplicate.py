@@ -6,8 +6,6 @@ class Solution(object):
                 return True
             hashset.add(i)
         return False
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+        
+       
         
