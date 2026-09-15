@@ -1,9 +1,11 @@
 class Solution(object):
     def singleNumber(self, nums):
-        ans=0
+        freq={}
         for num in nums:
-            ans=ans^num
-        return ans
+            freq[num]=freq.get(num,0)+1
+        for num in nums:
+            if freq[num]==1:
+                return num
         
 
          
