@@ -1,6 +1,5 @@
 class Solution(object):
     def moveZeroes(self, nums):
-        new=0
         L=0
         for R in range(len(nums)):
             if nums[R] !=0:
