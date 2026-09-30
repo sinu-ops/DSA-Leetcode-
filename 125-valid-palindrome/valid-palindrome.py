@@ -10,11 +10,11 @@ class Solution(object):
             if not s[R].isalnum():
                 R-=1
                 continue
-            if s[L].lower() !=s[R].lower():
-                return False
+            if s[L].lower() != s[R].lower():
+                return False  
             L+=1
             R-=1
-        return True
+        return True  
 
             
 
