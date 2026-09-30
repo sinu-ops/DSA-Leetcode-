@@ -3,6 +3,7 @@ class Solution(object):
         L=0
         R=len(s)-1
         res=0
+        s=s.lower()
         while L <R:
             if not s[L].isalnum():
                 L+=1
@@ -10,7 +11,7 @@ class Solution(object):
             if not s[R].isalnum():
                 R-=1
                 continue
-            if s[L].lower() != s[R].lower():
+            if s[L] != s[R]:
                 return False  
             L+=1
             R-=1
