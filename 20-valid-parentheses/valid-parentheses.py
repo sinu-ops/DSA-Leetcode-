@@ -6,15 +6,16 @@ class Solution(object):
             "]" : "[",
             "}" : "{"
         }
-
         for i in s:
-            if i in "({[":
+            if i in "{[(":
                 stack.append(i)
             else:
                 if not stack or stack[-1] != mapping[i]:
                     return False
                 stack.pop()
-        return len(stack) == 0 
+        return len(stack) == 0
+            
+        
 
 
 
